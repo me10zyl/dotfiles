@@ -3,8 +3,7 @@ set background=dark
 colorscheme solarized
 let g:solarized_termtrans=1
 
-" Make Vim more useful
-set nocompatible
+" Make Vim more useful set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
@@ -110,10 +109,39 @@ endif
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
+" Vim File Explorer Plugin
 Plugin 'scrooloose/nerdtree'
+" Syntax Support Plugin
+Plugin 'sheerun/vim-polyglot'
+" code complete
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+
 call vundle#end()
 
-"NERDTree settings
-"open NERDTree with ^N
+" | NERDTree settings |
+" open NERDTree with ^N
 map <C-n> :NERDTreeToggle<CR>
+
+" | ultisnips configuration |
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" | You Compelete Me |
+" make YCM compatible with UltiSnips (using supertab)
+"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" | polyglot configuration |
+" fix error prompt, disable graphql
+let g:polyglot_disabled = ['graphql']
