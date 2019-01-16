@@ -1,0 +1,20 @@
+export TJ=~/Documents/itaojingit
+export B=$TJ/blog
+export SS=~/sshs
+export T=/Users/zyl/scripts/sshs/test
+export P=~/sshs/prd
+export D=~/Downloads
+
+alias ls='ls -aG'
+alias ll='ls -laG'
+alias rp='realpath'
+alias glgraph="git log --pretty=format:'%h %s' --graph"
+alias pc='proxychains4'
+
+#export gcm='git commit -am'
+
+export M2_HOME=/Users/zyl/Documents/apache-maven-3.5.3/
+export ZYL_SHELL_HOME=/Users/zyl/shells
+export SSHS_HOME=/Users/zyl/scripts/sshs/test
+export SSHS_HOME2=/Users/zyl/scripts/sshs/prd
+export PATH=$PATH:$M2_HOME/bin:$ZYL_SHELL_HOME:$SSHS_HOME:$SSHS_HOME2:/Users/zyl/soft/phantomjs/bin:/Users/zyl/files/chromedriver
