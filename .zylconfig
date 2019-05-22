@@ -10,11 +10,14 @@ alias ll='ls -laG'
 alias rp='realpath'
 alias glgraph="git log --pretty=format:'%h %s' --graph"
 alias pc='proxychains4'
+alias gg='git commit -am'
 
 #export gcm='git commit -am'
 
+export ZYL_SCRIPTS_HOME=/Users/zyl/scripts
 export M2_HOME=/Users/zyl/Documents/apache-maven-3.5.3/
-export ZYL_SHELL_HOME=/Users/zyl/shells
-export SSHS_HOME=/Users/zyl/scripts/sshs/test
+export ZYL_SHELL_HOME=/Users/zyl/shells export SSHS_HOME=/Users/zyl/scripts/sshs/test
 export SSHS_HOME2=/Users/zyl/scripts/sshs/prd
-export PATH=$PATH:$M2_HOME/bin:$ZYL_SHELL_HOME:$SSHS_HOME:$SSHS_HOME2:/Users/zyl/soft/phantomjs/bin:/Users/zyl/files/chromedriver
+export PATH=$PATH:$M2_HOME/bin:$ZYL_SHELL_HOME:$SSHS_HOME:$SSHS_HOME2:/Users/zyl/soft/phantomjs/bin:/Users/zyl/files/chromedriver:/Users/zyl/projects/pict:$ZYL_SCRIPTS_HOME
+export PKG_CONFIG_PATH=/Users/zyl/pkgconfig
+export SSLKEYLOGFILE=/Users/zyl/sslkeylog/sslkeylog.log
